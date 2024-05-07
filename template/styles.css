@@ -1,0 +1,61 @@
+:root {
+  --color-brand: #015398;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  color: #202020;
+  line-height: 1.6;
+}
+
+/* 
+  MARK: GRID
+*/
+
+.container {
+  width: 100%;
+  max-width: 1248px;
+  padding-inline: 16px;
+  margin-inline: auto;
+}
+
+/*
+  MARK: TYPOGRAPHY
+*/
+
+.section-info {
+  margin-block-end: 14px;
+  font-family: "Lexend", sans-serif;
+  font-weight: 500;
+  font-optical-sizing: auto;
+  font-size: 20px;
+  color: var(--color-brand);
+}
+
+[class^="text"] {
+  font-size: 24px;
+}
+
+[class^="title"] {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  font-family: "Lexend", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 30px;
+  font-weight: 700;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 52px;
+    height: 4px;
+    background-color: red;
+  }
+
+  &:has(+ [class^="text"]) {
+    margin-block-end: 14px;
+  }
+}
