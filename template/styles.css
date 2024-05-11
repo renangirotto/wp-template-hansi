@@ -35,7 +35,7 @@ body {
 }
 
 [class^="text"] {
-  font-size: 24px;
+  font-size: 18px;
 }
 
 [class^="title"] {
@@ -58,4 +58,45 @@ body {
   &:has(+ [class^="text"]) {
     margin-block-end: 14px;
   }
+}
+
+/*
+  MARK: FOOTER
+*/
+
+footer {
+  padding-block: 60px;
+  font-family: "Lexend", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  background: #fcfcfc;
+
+  h2 {
+    margin-block-end: 16px;
+    font-size: 1.25rem;
+    font-weight: 700;
+  }
+
+  a {
+    display: block;
+  }
+}
+
+.footer-documents {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-block-start: 30px;
+
+  a {
+    color: #636363;
+    text-decoration: underline;
+  }
+}
+
+.footer-social {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-block-start: 16px;
 }
