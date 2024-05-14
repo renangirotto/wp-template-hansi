@@ -174,7 +174,90 @@ body {
 }
 
 /*
-  MARK: OUR NUMBERS
+  MARK: HOME - FOCUS ON INOVATION
+*/
+.focus-box {
+  max-width: 637px;
+  padding-block: 40px;
+  padding-inline: 40px 16px;
+  border-radius: 76px 0px 0px 0px;
+  position: relative;
+  margin-block-start: -164px;
+  z-index: 1;
+  background: #fff;
+
+  @media (min-width: 768px) {
+    padding-block: 60px;
+    padding-inline: 60px;
+    border-radius: 110px 0px 0px 0px;
+    margin-block-start: 0px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+}
+
+.focus-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  width: 100%;
+  max-width: 1248px;
+  margin-inline: auto;
+  position: relative;
+  overflow: hidden;
+
+  figure {
+    max-height: 1038px;
+    margin-inline-end: auto;
+  }
+
+  img {
+    width: 100%;
+    max-width: 480px;
+    position: relative;
+    left: -32px;
+
+    @media (min-width: 768px) {
+      max-width: 928px;
+      z-index: 0;
+    }
+  }
+}
+
+.focus-list {
+  font-size: 1.125rem;
+
+  strong {
+    font-weight: 700;
+  }
+
+  li {
+    &:not(:last-child) {
+      margin-block-end: 24px;
+    }
+  }
+}
+
+.focus-title {
+  font-family: "Lexend", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+
+  @media (min-width: 768px) {
+    font-size: 3.125rem;
+  }
+
+  &:not(:last-child) {
+    margin-block-end: 48px;
+  }
+}
+
+/*
+  MARK: HOME - OUR NUMBERS
 */
 .our-numbers {
   padding-block: 60px;
