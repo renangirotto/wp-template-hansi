@@ -2,12 +2,33 @@
   --color-brand: #015398;
 }
 
+/* 
+  MARK: GENERAL
+*/
+
 body {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-style: normal;
   color: #202020;
   line-height: 1.6;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  width: fit-content;
+  padding-block: 24px;
+  padding-inline: 24px;
+  border-radius: 4px;
+  font-size: 1.25rem;
+  color: #ffffff;
+  text-decoration: none;
+  background: var(--color-brand);
+  -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 71, 132, 1);
+  -moz-box-shadow: 0px 0px 20px 0px rgba(0, 71, 132, 1);
+  box-shadow: 0px 0px 20px 0px rgba(0, 71, 132, 1);
 }
 
 /* 
@@ -174,6 +195,78 @@ body {
 }
 
 /*
+  MARK: HOME - TRUSTED SOLUTION
+*/
+.trusted-box {
+  max-width: 524px;
+  padding-block: 44px;
+  padding-inline: 24px;
+  border-radius: 0px 0px 100px 0px;
+  margin-block-end: -200px;
+  position: relative;
+  z-index: 1;
+  background: #ffffff;
+
+  @media (min-width: 768px) {
+    padding-block: 0px;
+    padding-inline: 16px;
+    border-radius: 0px;
+    margin-block-end: 0px;
+    margin-inline: auto;
+  }
+}
+
+.trusted-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1369px;
+  margin-inline: auto;
+  margin-block-end: 32px;
+  position: relative;
+  overflow: hidden;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    align-items: center;
+    gap: 32px;
+    margin-block-end: 0px;
+  }
+
+  figure {
+    width: 90%;
+    width: 90dvw;
+    max-width: 626px;
+    margin-inline-start: auto;
+  }
+}
+
+.trusted-text {
+  font-size: 1.25rem;
+
+  &:not(:last-child) {
+    margin-block-end: 60px;
+  }
+}
+
+.trusted-title {
+  font-family: "Lexend", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+
+  @media (min-width: 768px) {
+    font-size: 3.125rem;
+  }
+
+  &:not(:last-child) {
+    margin-block-end: 24px;
+  }
+}
+
+/*
   MARK: HOME - FOCUS ON INOVATION
 */
 .focus-box {
@@ -203,7 +296,7 @@ body {
   justify-content: flex-end;
   align-items: flex-end;
   width: 100%;
-  max-width: 1248px;
+  max-width: 1369px;
   margin-inline: auto;
   position: relative;
   overflow: hidden;
@@ -234,9 +327,18 @@ body {
   }
 
   li {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+
     &:not(:last-child) {
       margin-block-end: 24px;
     }
+  }
+
+  svg {
+    min-width: 32px;
+    max-width: 32px;
   }
 }
 
