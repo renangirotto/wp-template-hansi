@@ -96,6 +96,10 @@ body {
 
 [class^="text"] {
   font-size: 16px;
+
+  &.center {
+    text-align: center;
+  }
 }
 
 [class^="title"] {
@@ -125,6 +129,69 @@ body {
     @media (min-width: 768px) {
       margin-block-end: 60px;
     }
+  }
+}
+
+/*
+  MARK: CARDS JOB
+*/
+.job-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  width: 100%;
+  margin-block-start: 60px;
+
+  &:not(:last-child) {
+    margin-block-end: 60px;
+  }
+}
+
+.job-card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 286px;
+  padding-block: 16px;
+  padding-inline: 16px;
+  border: 1px solid #c8c8c8;
+  border-radius: 8px;
+}
+
+.job-card-link {
+  display: inline-flex;
+  gap: 8px;
+  align-items: center;
+  padding-block: 8px;
+  padding-inline: 16px;
+  border: 1px solid var(--color-brand);
+  border-radius: 4px;
+  color: var(--color-brand);
+  text-decoration: none;
+
+  svg {
+    min-width: 10px;
+    max-width: 10px;
+  }
+}
+
+.job-card-title {
+  font-family: "Lexend", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-size: 1.25rem;
+  line-height: 1.5;
+
+  &:not(:last-child) {
+    margin-block-end: 4px;
+  }
+}
+
+.job-card-text {
+  color: #9c9c9c;
+
+  &:not(:last-child) {
+    margin-block-end: 16px;
   }
 }
 
@@ -234,6 +301,95 @@ body {
   position: absolute;
   inset: 0;
   z-index: 0;
+}
+
+/*
+  MARK: CARDS TEAM
+*/
+.team-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-block-start: 40px;
+  margin-inline: auto;
+
+  @media (min-width: 1260px) {
+    justify-content: flex-start;
+  }
+}
+
+.team-card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 280px;
+  align-items: center;
+  padding-block: 12px;
+  padding-inline: 12px;
+  border-radius: 8px;
+  -webkit-box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.1);
+}
+
+.team-card-divider {
+  width: 28px;
+  height: 1px;
+  margin-block-end: 16px;
+  background: #fd4970;
+}
+
+.team-card-image {
+  width: 100%;
+
+  &:not(:last-child) {
+    margin-block-end: 8px;
+  }
+
+  img {
+    display: block;
+    width: 100%;
+  }
+}
+
+.team-card-link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #9c9c9c;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  img {
+    display: block;
+  }
+}
+
+.team-card-text {
+  font-family: "Lexend", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 14px;
+  font-weight: 300;
+
+  &:not(:last-child) {
+    margin-block-end: 12px;
+  }
+}
+
+.team-card-title {
+  font-family: "Lexend", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.5;
+
+  &:not(:last-child) {
+    margin-block-end: 4px;
+  }
 }
 
 /*
