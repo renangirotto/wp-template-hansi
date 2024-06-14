@@ -16,6 +16,56 @@
   <script type="text/javascript" src="./scripts.js"></script>
 </head>
 <body>
+  <header id="navbar" class="navbar" data-open="false">
+    <div class="navbar-container">
+      <figure class="navbar-logo">
+        <img src="./assets/images/logo.png" />
+      </figure>
+      <button class="navbar-menu" onclick="handleMobileMenu()">
+        <span class="navbar-action-open">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+        </span>
+        <span class="navbar-action-close">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+        </span>
+      </button>
+      <nav class="navbar-nav">
+        <ul class="navbar-list">
+          <li class="navbar-item">
+            <a class="navbar-link" href="./index.html">
+              Home
+            </a>
+          </li>
+          <li class="navbar-item">
+            <a class="navbar-link" href="./company.html">
+              Company
+            </a>
+          </li>
+          <li class="navbar-item">
+            <a class="navbar-link" href="./technologies.html">
+              Technologies
+            </a>
+          </li>
+          <li class="navbar-item" data-active="true">
+            <a class="navbar-link" href="./applications.html">
+              Applications
+            </a>
+          </li>
+          <li class="navbar-item">
+            <a class="navbar-link" href="./team.html">
+              Team
+            </a>
+          </li>
+          <li class="navbar-item">
+            <a class="navbar-link" href="./news.html">
+              News
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
   <section class="section-spaced">
     <div class="container">
       <!-- 
@@ -91,76 +141,40 @@
 
       
 
-      <h2 class="title">Application</h2>
+      <h2 class="title">Technologies</h2>
       <div class="card-container">
-        <div class="card-link is-application">
-          <img aria-hidden="true" class="card-link-image" src="./assets/images/application-1.png" />
+        <div class="card-link is-solution">
+          <img aria-hidden="true" class="card-link-image" src="./assets/images/solution-1.png" />
           <div class="card-link-content">
-            <h3>Automotive</h3>
-            <ul>
-              <li>Fixtures</li>
-              <li>Drivers Cabin</li>
-              <li>Floor Coverings</li>
-              <li>Doors</li>
-            </ul>
+            <span>Polyurethane</span>
             <a href="#">View more</a>
           </div>
         </div>
-        <div class="card-link is-application">
-          <img aria-hidden="true" class="card-link-image" src="./assets/images/application-2.png" />
+        <div class="card-link is-solution">
+          <img aria-hidden="true" class="card-link-image" src="./assets/images/solution-2.png" />
           <div class="card-link-content">
-            <h3>Construction</h3>
-            <ul>
-              <li>Mounting of Components</li>
-              <li>Bonding of floor coverages</li>
-            </ul>
+            <span>Epoxy</span>
             <a href="#">View more</a>
           </div>
         </div>
-        <div class="card-link is-application">
-          <img aria-hidden="true" class="card-link-image" src="./assets/images/application-3.png" />
+        <div class="card-link is-solution">
+          <img aria-hidden="true" class="card-link-image" src="./assets/images/solution-3.png" />
           <div class="card-link-content">
-            <h3>Eletronic</h3>
-            <ul>
-              <li>Potting and encapsulation of sensitive components</li>
-              <li>PCB board coating</li>
-            </ul>
+            <span>SMP</span>
             <a href="#">View more</a>
           </div>
         </div>
-        <div class="card-link is-application">
-          <img aria-hidden="true" class="card-link-image" src="./assets/images/application-4.png" />
+        <div class="card-link is-solution">
+          <img aria-hidden="true" class="card-link-image" src="./assets/images/solution-4.png" />
           <div class="card-link-content">
-            <h3>Marine</h3>
-            <ul>
-              <li>Fixtures</li>
-              <li>Drivers Cabin</li>
-              <li>Floor Coverings</li>
-              <li>Doors</li>
-            </ul>
+            <span>Hotmelt</span>
             <a href="#">View more</a>
           </div>
         </div>
-        <div class="card-link is-application">
-          <img aria-hidden="true" class="card-link-image" src="./assets/images/application-5.png" />
+        <div class="card-link is-solution">
+          <img aria-hidden="true" class="card-link-image" src="./assets/images/solution-5.png" />
           <div class="card-link-content">
-            <h3>Rail / Train</h3>
-            <ul>
-              <li>Fixtures</li>
-              <li>Drivers Cabin</li>
-              <li>Floor Coverings</li>
-              <li>Doors</li>
-            </ul>
-            <a href="#">View more</a>
-          </div>
-        </div>
-        <div class="card-link is-application">
-          <img aria-hidden="true" class="card-link-image" src="./assets/images/application-6.png" />
-          <div class="card-link-content">
-            <h3>Filter</h3>
-            <ul>
-              <li>Bonding and sealing of filters and filter elements</li>
-            </ul>
+            <span>Specialities</span>
             <a href="#">View more</a>
           </div>
         </div>

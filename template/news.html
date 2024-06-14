@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hansi - We create adhesive power</title>
+
+  <link rel="stylesheet" href="./reset.css">
+  <link rel="stylesheet" href="./styles.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+  <script type="text/javascript" src="./scripts.js"></script>
+</head>
+<body>
+  <header id="navbar" class="navbar" data-open="false">
+    <div class="navbar-container">
+      <figure class="navbar-logo">
+        <img src="./assets/images/logo.png" />
+      </figure>
+      <button class="navbar-menu" onclick="handleMobileMenu()">
+        <span class="navbar-action-open">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+        </span>
+        <span class="navbar-action-close">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+        </span>
+      </button>
+      <nav class="navbar-nav">
+        <ul class="navbar-list">
+          <li class="navbar-item">
+            <a class="navbar-link" href="./index.html">
+              Home
+            </a>
+          </li>
+          <li class="navbar-item">
+            <a class="navbar-link" href="./company.html">
+              Company
+            </a>
+          </li>
+          <li class="navbar-item">
+            <a class="navbar-link" href="./technologies.html">
+              Technologies
+            </a>
+          </li>
+          <li class="navbar-item">
+            <a class="navbar-link" href="./applications.html">
+              Applications
+            </a>
+          </li>
+          <li class="navbar-item">
+            <a class="navbar-link" href="./team.html">
+              Team
+            </a>
+          </li>
+          <li class="navbar-item" data-active="true">
+            <a class="navbar-link" href="./news.html">
+              News
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <section class="section-spaced">
+    <!-- 
+      MARK: NEWS 
+    -->
+    <div class="container">
+      <span class="section-info">Who makes it happen</span>
+      <h2 class="title">News</h2>
+      <div class="news-cards">
+        <a class="news-card" href="#">
+          <figure class="news-card-image">
+            <img src="./assets/images/news-1.png" alt="">
+          </figure>
+          <div class="news-card-content">
+            <p class="news-card-category">Category</p>
+            <h3 class="news-card-title">How we factory de adhesives</h3>
+            <p class="news-card-text">Hier finden Sie eine kurze Beschreibung der Neuigkeiten</p>
+            <p class="news-card-date">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_62_882)">
+                    <path d="M15 2.25H14.25V0.75H12.75V2.25H5.25V0.75H3.75V2.25H3C2.175 2.25 1.5 2.925 1.5 3.75V15.75C1.5 16.575 2.175 17.25 3 17.25H15C15.825 17.25 16.5 16.575 16.5 15.75V3.75C16.5 2.925 15.825 2.25 15 2.25ZM15 15.75H3V7.5H15V15.75ZM15 6H3V3.75H15V6Z" fill="#9C9C9C"/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_62_882">
+                    <rect width="18" height="18" fill="white"/>
+                    </clipPath>
+                    </defs>
+                </svg>                    
+                mar.23.24
+            </p>
+          </div>
+        </a>
+        <a class="news-card" href="#">
+            <figure class="news-card-image">
+              <img src="./assets/images/news-2.png" alt="">
+            </figure>
+            <div class="news-card-content">
+              <p class="news-card-category">Category</p>
+              <h3 class="news-card-title">How we factory de adhesives</h3>
+              <p class="news-card-text">Hier finden Sie eine kurze Beschreibung der Neuigkeiten</p>
+              <p class="news-card-date">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_62_882)">
+                    <path d="M15 2.25H14.25V0.75H12.75V2.25H5.25V0.75H3.75V2.25H3C2.175 2.25 1.5 2.925 1.5 3.75V15.75C1.5 16.575 2.175 17.25 3 17.25H15C15.825 17.25 16.5 16.575 16.5 15.75V3.75C16.5 2.925 15.825 2.25 15 2.25ZM15 15.75H3V7.5H15V15.75ZM15 6H3V3.75H15V6Z" fill="#9C9C9C"/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_62_882">
+                    <rect width="18" height="18" fill="white"/>
+                    </clipPath>
+                    </defs>
+                </svg>                    
+                mar.23.24
+            </p>
+            </div>
+          </a>
+          <a class="news-card" href="#">
+            <figure class="news-card-image">
+              <img src="./assets/images/news-3.png" alt="">
+            </figure>
+            <div class="news-card-content">
+              <p class="news-card-category">Category</p>
+              <h3 class="news-card-title">How we factory de adhesives</h3>
+              <p class="news-card-text">Hier finden Sie eine kurze Beschreibung der Neuigkeiten</p>
+              <p class="news-card-date">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_62_882)">
+                    <path d="M15 2.25H14.25V0.75H12.75V2.25H5.25V0.75H3.75V2.25H3C2.175 2.25 1.5 2.925 1.5 3.75V15.75C1.5 16.575 2.175 17.25 3 17.25H15C15.825 17.25 16.5 16.575 16.5 15.75V3.75C16.5 2.925 15.825 2.25 15 2.25ZM15 15.75H3V7.5H15V15.75ZM15 6H3V3.75H15V6Z" fill="#9C9C9C"/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_62_882">
+                    <rect width="18" height="18" fill="white"/>
+                    </clipPath>
+                    </defs>
+                </svg>                    
+                mar.23.24
+            </p>
+            </div>
+          </a>
+          <a class="news-card" href="#">
+            <figure class="news-card-image">
+              <img src="./assets/images/news-4.png" alt="">
+            </figure>
+            <div class="news-card-content">
+              <p class="news-card-category">Category</p>
+              <h3 class="news-card-title">How we factory de adhesives</h3>
+              <p class="news-card-text">Hier finden Sie eine kurze Beschreibung der Neuigkeiten</p>
+              <p class="news-card-date">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_62_882)">
+                    <path d="M15 2.25H14.25V0.75H12.75V2.25H5.25V0.75H3.75V2.25H3C2.175 2.25 1.5 2.925 1.5 3.75V15.75C1.5 16.575 2.175 17.25 3 17.25H15C15.825 17.25 16.5 16.575 16.5 15.75V3.75C16.5 2.925 15.825 2.25 15 2.25ZM15 15.75H3V7.5H15V15.75ZM15 6H3V3.75H15V6Z" fill="#9C9C9C"/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_62_882">
+                    <rect width="18" height="18" fill="white"/>
+                    </clipPath>
+                    </defs>
+                </svg>                    
+                mar.23.24
+            </p>
+            </div>
+          </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 
+    MARK: FOOTER 
+  -->
+  <footer>
+    <div class="container">
+      <h2>HANSI Development Center Germany GmbH</h2>
+      <address>
+        Donnersbergweg 1<br/>
+        67059 Ludwigshafen
+      </address>
+      <span>+49 (0)621 5957 6478</span>
+      <a href="mailto:info@de-hansi.eu">info@de-hansi.eu</a>
+      <div class="footer-social">
+        <a href="#" target="_blank">
+          <img src="./assets/icons/linkedin.svg" />
+        </a>
+        <a href="#" target="_blank">
+          <img src="./assets/icons/instagram.svg" />
+        </a>
+      </div>
+      <div class="footer-documents">
+        <a href="#" target="_blank">Impressum</a>
+        <a href="#" target="_blank">Privacy police</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

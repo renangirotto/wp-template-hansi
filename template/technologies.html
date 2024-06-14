@@ -16,6 +16,56 @@
   <script type="text/javascript" src="./scripts.js"></script>
 </head>
 <body>
+  <header id="navbar" class="navbar" data-open="false">
+    <div class="navbar-container">
+      <figure class="navbar-logo">
+        <img src="./assets/images/logo.png" />
+      </figure>
+      <button class="navbar-menu" onclick="handleMobileMenu()">
+        <span class="navbar-action-open">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+        </span>
+        <span class="navbar-action-close">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+        </span>
+      </button>
+      <nav class="navbar-nav">
+        <ul class="navbar-list">
+          <li class="navbar-item">
+            <a class="navbar-link" href="./index.html">
+              Home
+            </a>
+          </li>
+          <li class="navbar-item">
+            <a class="navbar-link" href="./company.html">
+              Company
+            </a>
+          </li>
+          <li class="navbar-item" data-active="true">
+            <a class="navbar-link" href="./technologies.html">
+              Technologies
+            </a>
+          </li>
+          <li class="navbar-item">
+            <a class="navbar-link" href="./applications.html">
+              Applications
+            </a>
+          </li>
+          <li class="navbar-item">
+            <a class="navbar-link" href="./team.html">
+              Team
+            </a>
+          </li>
+          <li class="navbar-item">
+            <a class="navbar-link" href="./news.html">
+              News
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
   <section class="section-spaced">
     <div class="container">
       <!-- 
@@ -38,31 +88,6 @@
           Specialities
         </li>
       </ul>
-
-      <!-- <div class="tabs-container" data-active="true" data-tab-container="1">
-        <div class="tabs-container-main">
-          <div>
-            <p>PU adhesives have an excellent adhesion to many substrates, excellent flexibility and excellent mechanical properties at high and low temperatures. The adhesives are formulated either as single-component products, which then cure after application with the humidity present in the environment or as two-component adhesives in which a resin and a hardener are mixed and the curing takes place thereby. All HANSI polyurethanes are tailor-made for your application.</p>
-            <div class="tabs-container-box is-single-element">
-              <div>
-                <strong>Properties</strong>
-                <ul>
-                  <li>Very good adhesive performance on many different substrates</li>
-                  <li>Good properties over a wide temperature range</li>
-                  <li>Very good resistance to weathering</li>
-                  <li>One-sided application possible</li>
-                  <li>Universal dosing equipment</li>
-                  <li>Curing times are adjustable (2K products)</li>
-                  <li>Products are partially fire-retardant</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <figure>
-            <img src="./assets/images/technologies-image.png" alt="">
-          </figure>
-        </div>
-      </div> -->
 
       <div class="tabs-container" data-active="true" data-tab-container="1">
         <div class="tabs-container-main">

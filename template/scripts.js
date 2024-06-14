@@ -24,3 +24,17 @@ const changeTabs = (tabTarget) => {
   targetTabItem.setAttribute("data-active", "true");
   targetTabContainer.setAttribute("data-active", "true");
 };
+
+const handleMobileMenu = () => {
+  console.log("aqui?");
+  const navbar = document.getElementById("navbar");
+
+  const status = navbar.dataset.open;
+
+  if (status === "false") {
+    navbar.dataset.open = "true";
+    return;
+  }
+
+  navbar.dataset.open = "false";
+};
